@@ -70,3 +70,30 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 "# VideoPlayer" 
 "# VideoPlayer" 
+
+###  `Props
+### videos: An array of objects representing each video in the playlist. Each object should have a title and src property.
+onSelectVideo: Function callback that is called when a video is selected. Receives the selected video object as an argument.
+onDragStart: Function callback that is called when a drag operation starts. Receives the drag event and the index of the dragged item as arguments.
+onDragOver: Function callback that is called when an item is dragged over the playlist. Prevents the default behavior of the drag event.
+onDrop: Function callback that is called when an item is dropped onto the playlist. Receives the drop event and the index where the item is dropped as arguments.
+
+### Features
+
+Display Playlist: Displays a list of videos with titles.
+Drag and Drop: Allows rearranging the playlist by dragging and dropping videos.
+Select Video: Click on a video title to select and play the video.
+
+### Props
+### src: The source URL of the video.
+autoplay: Boolean indicating whether the video should start playing automatically.
+onTimeUpdate: Function callback that receives the current time of the video as it plays.
+### Features
+Play/Pause: Click the "Play" button to start playing the video. It toggles to "Pause" while the video is playing.
+Seek: Click and drag the progress bar to seek through the video.
+Playback Speed: Select the desired playback speed from the dropdown menu.
+Current Time/Duration: Displays the current time and total duration of the video.
+
+### Contributions
+
+Contributions are welcome! If you find any bugs or have suggestions for improvements, feel free to open an issue or submit a pull request.
